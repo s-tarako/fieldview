@@ -1,18 +1,16 @@
 <html>
-    <head>
-        <title>ARコンテンツのサンプル</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-        <h2>ARコンテンツのサンプル</h2>
-        <div align="right">2023/04/28</div>
-        <hr />
-        以下の画像をタップするとARできます。<br>
-        <a rel="ar" href="./field.glb">
-            <img src="./field.png" />
-        </a><br>
-        フィールドの表示テスト<br>
-        <hr />
-    </body>
+
+<head>
+    <title>ARコンテンツのサンプル</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <model-viewer ar ar-modes="scene-viewer webxr quick-look" src="./field.glb" ios-src="./field.usdz" alt="field"
+        auto-rotate camera-controls></model-viewer>
+</body>
+
 </html>
